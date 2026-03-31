@@ -48,6 +48,9 @@ export default function Navbar() {
           <Link to="/bbq-menu" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
             BBQ Menu
           </Link>
+          <Link to="/keto-meals" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            Keto Meals
+          </Link>
           <Link to="/corporate-packages" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
             Corporate Packages
           </Link>
@@ -97,6 +100,9 @@ export default function Navbar() {
               ))}
               <Link to="/bbq-menu" onClick={() => setOpen(false)} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-primary py-2">
                 BBQ Menu
+              </Link>
+              <Link to="/keto-meals" onClick={() => setOpen(false)} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-primary py-2">
+                Keto Meals
               </Link>
               <Link to="/corporate-packages" onClick={() => setOpen(false)} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-primary py-2">
                 Corporate Packages

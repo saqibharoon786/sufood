@@ -7,6 +7,7 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import Index from "./pages/Index.tsx";
 import BBQMenuPage from "./pages/BBQMenuPage.tsx";
 import CorporatePackagesPage from "./pages/CorporatePackagesPage.tsx";
+import KetoMealsPage from "./pages/KetoMealsPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import POSLayout from "./components/pos/POSLayout.tsx";
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/bbq-menu" element={<BBQMenuPage />} />
             <Route path="/corporate-packages" element={<CorporatePackagesPage />} />
+            <Route path="/keto-meals" element={<KetoMealsPage />} />
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/pos/login" element={<Login />} />
             <Route path="/pos" element={<POSLayout />}>

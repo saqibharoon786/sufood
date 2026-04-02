@@ -9,6 +9,14 @@ import BBQMenuPage from "./pages/BBQMenuPage.tsx";
 import CorporatePackagesPage from "./pages/CorporatePackagesPage.tsx";
 import KetoMealsPage from "./pages/KetoMealsPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
+import BlogListPage from "./pages/blog/BlogListPage.tsx";
+import BlogPostPage from "./pages/blog/BlogPostPage.tsx";
+import AboutPage from "./pages/site/AboutPage.tsx";
+import MenuPage from "./pages/site/MenuPage.tsx";
+import DealsPage from "./pages/site/DealsPage.tsx";
+import ServicesPage from "./pages/site/ServicesPage.tsx";
+import CoveragePage from "./pages/site/CoveragePage.tsx";
+import GalleryPage from "./pages/site/GalleryPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import POSLayout from "./components/pos/POSLayout.tsx";
 import POSDashboard from "./pages/pos/POSDashboard.tsx";
@@ -31,6 +39,14 @@ const App = () => (
             <Route path="/bbq-menu" element={<BBQMenuPage />} />
             <Route path="/corporate-packages" element={<CorporatePackagesPage />} />
             <Route path="/keto-meals" element={<KetoMealsPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/menu" element={<MenuPage />} />
+            <Route path="/deals" element={<DealsPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/coverage" element={<CoveragePage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
+            <Route path="/blog" element={<BlogListPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/contact-us" element={<ContactPage />} />
             <Route path="/pos/login" element={<Login />} />
             <Route path="/pos" element={<POSLayout />}>

@@ -69,8 +69,8 @@ const ketoCta = whatsappUrlWithMessage(
 
 export default function KetoMealsPage() {
   usePageSeo(
-    'Keto & Low-Carb Meals Islamabad | SU Food',
-    'Learn what keto is, how macros work, and Pakistani-friendly low-carb ideas. SU Food can help with corporate keto-friendly catering in Islamabad.',
+    "Keto Meal Plans Islamabad | Healthy Food Delivery | Safiullah's Food",
+    "Safiullah's Food ka healthy keto meal plan — fresh, low-carb, nutritious khana seedha aapke ghar ya office deliver. Islamabad aur Rawalpindi mein available. Abhi order karein!",
   );
 
   return (

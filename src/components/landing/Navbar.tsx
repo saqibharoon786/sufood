@@ -30,14 +30,15 @@ function TikTokIcon({ className = '' }: { className?: string }) {
 }
 
 const navLinks = [
-  { label: 'Home', href: '#hero' },
-  { label: 'About', href: '#about' },
-  { label: 'Menu', href: '#menu' },
-  { label: 'Deals', href: '#deals' },
-  { label: 'Services', href: '#services' },
-  { label: 'Coverage', href: '#coverage' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', to: '/' },
+  { label: 'About', to: '/about' },
+  { label: 'Menu', to: '/menu' },
+  { label: 'Deals', to: '/deals' },
+  { label: 'Services', to: '/services' },
+  { label: 'Coverage', to: '/coverage' },
+  { label: 'Gallery', to: '/gallery' },
+  { label: 'Blog', to: '/blog' },
+  { label: 'Contact', to: '/contact-us' },
 ];
 
 export default function Navbar() {
@@ -66,15 +67,10 @@ export default function Navbar() {
     },
   ];
 
-  const scrollTo = (id: string) => {
-    setOpen(false);
-    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 lg:h-20">
-        <button onClick={() => scrollTo('#hero')} className="flex items-center gap-3 group shrink-0">
+        <Link to="/" className="flex items-center gap-3 group shrink-0">
           <span className="w-11 h-11 lg:w-14 lg:h-14 rounded-full bg-white border border-border/50 shadow-sm p-1.5 flex items-center justify-center overflow-hidden">
             <img
               src="/saifullah-logo.png"
@@ -88,13 +84,13 @@ export default function Navbar() {
               Premium Kitchen
             </span>
           </span>
-        </button>
+        </Link>
 
         <div className="hidden md:flex items-center gap-5">
           {navLinks.map(l => (
-            <button key={l.href} onClick={() => scrollTo(l.href)} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
+            <Link key={l.to} to={l.to} className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
               {l.label}
-            </button>
+            </Link>
           ))}
           <Link to="/keto-meals" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">
             Keto Meals
@@ -139,9 +135,9 @@ export default function Navbar() {
           <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="md:hidden bg-background border-b border-border">
             <div className="px-4 py-4 space-y-3">
               {navLinks.map(l => (
-                <button key={l.href} onClick={() => scrollTo(l.href)} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-primary py-2">
+                <Link key={l.to} to={l.to} onClick={() => setOpen(false)} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-primary py-2">
                   {l.label}
-                </button>
+                </Link>
               ))}
               <Link to="/keto-meals" onClick={() => setOpen(false)} className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-primary py-2">
                 Keto Meals

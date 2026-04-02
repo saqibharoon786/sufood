@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import usePageSeo from '@/hooks/usePageSeo';
+import useJsonLd from '@/hooks/useJsonLd';
 
 const areas = [
   'Blue Area',
@@ -11,11 +12,117 @@ const areas = [
   'Rawalpindi - Saddar and commercial areas',
 ];
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: "Safiullah's Food minimum kitne logon ke liye order accept karta hai?",
+      acceptedAnswer: { '@type': 'Answer', text: 'Daily meals ke liye minimum 20 employees aur events ke liye minimum 50 guests ka order accept kiya jata hai.' },
+    },
+    {
+      '@type': 'Question',
+      name: "Kya Safiullah's Food Islamabad mein office catering deliver karta hai?",
+      acceptedAnswer: { '@type': 'Answer', text: 'Haan, Safiullah\'s Food Islamabad ke tamam areas mein deliver karta hai — Blue Area, F sectors, G sectors, I sectors, DHA, Bahria Town aur Rawalpindi ke commercial areas.' },
+    },
+    {
+      '@type': 'Question',
+      name: "Safiullah's Food ka menu kya hai?",
+      acceptedAnswer: { '@type': 'Answer', text: "Safiullah's Food BBQ, Biryani, Chicken Tikka, Seekh Kabab, Pulao, Daal Chawal, Karahi aur Keto Meals offer karta hai. Bulk orders aur custom menus bhi available hain." },
+    },
+    {
+      '@type': 'Question',
+      name: 'Order kitna pehle dena hota hai?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Daily meal plan ke liye 3 din pehle aur corporate events ke liye 1 hafta pehle order confirm karna hota hai.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Kya corporate offices ke liye monthly billing available hai?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Haan, corporate clients ke liye monthly invoice facility available hai. Long term contracts par special rates bhi milte hain.' },
+    },
+    {
+      '@type': 'Question',
+      name: "Safiullah's Food se kaise contact karein?",
+      acceptedAnswer: { '@type': 'Answer', text: 'Phone ya WhatsApp: 0331-2311138. Email: sufood@gmail.com. Website: sucatering.online. Monday se Saturday 9am se 8pm available hain.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Kya menu customize ho sakta hai?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Bilkul — aap apni company ki preferences ke mutabiq menu customize kar sakte hain. Halal ingredients use kiye jate hain.' },
+    },
+    {
+      '@type': 'Question',
+      name: "Kya Safiullah's Food BBQ catering events ke liye available hai?",
+      acceptedAnswer: { '@type': 'Answer', text: 'Haan, Safiullah\'s Food corporate events, company dinners, annual functions aur office parties ke liye full BBQ catering service provide karta hai jisme live BBQ counter bhi shamil hai.' },
+    },
+  ],
+};
+
+const contactPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: "Contact Safiullah's Food",
+  description: "Safiullah's Food se rabta karein — office catering, event booking ya bulk order quote ke liye Islamabad aur Rawalpindi mein.",
+  url: 'https://sucatering.online/contact',
+  mainEntity: {
+    '@type': 'Organization',
+    name: "Safiullah's Food",
+    url: 'https://sucatering.online',
+    logo: 'https://sucatering.online/saifullah-logo.png',
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        telephone: '+92-331-2311138',
+        contactType: 'customer service',
+        contactOption: 'TollFree',
+        areaServed: 'PK',
+        availableLanguage: ['Urdu', 'English'],
+        hoursAvailable: {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+          opens: '09:00',
+          closes: '20:00',
+        },
+      },
+      {
+        '@type': 'ContactPoint',
+        telephone: '+92-331-2311138',
+        contactType: 'sales',
+        areaServed: 'PK',
+        availableLanguage: ['Urdu', 'English'],
+      },
+    ],
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'G Phase 4, Gulrez Housing Scheme',
+      addressLocality: 'Islamabad',
+      addressRegion: 'Islamabad Capital Territory',
+      postalCode: '46000',
+      addressCountry: 'PK',
+    },
+  },
+};
+
+const contactBreadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sucatering.online' },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://sucatering.online/contact' },
+  ],
+};
+
 export default function ContactPage() {
   usePageSeo(
-    'Contact Su Food | Corporate Catering Islamabad | Get a Quote',
-    'Contact SU Food Islamabad for office catering quotes by call, WhatsApp, or email. Delivery available in Blue Area, F sectors, G sectors, and I sectors.',
+    "Contact Us | Get a Catering Quote | Safiullah's Food Islamabad",
+    "Safiullah's Food se rabta karein — office catering, event booking ya bulk order quote ke liye. Phone: 0331 2311138. Islamabad aur Rawalpindi mein delivery available. Abhi call karein!",
   );
+  useJsonLd([
+    { id: 'schema-faq-contact', data: faqSchema },
+    { id: 'schema-contact-page', data: contactPageSchema },
+    { id: 'schema-breadcrumb-contact', data: contactBreadcrumbSchema },
+  ]);
 
   return (
     <main className="min-h-screen bg-background px-4 py-12">

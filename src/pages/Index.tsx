@@ -9,66 +9,31 @@ import ServiceCoverage from '@/components/landing/ServiceCoverage';
 import Testimonials from '@/components/landing/Testimonials';
 import Gallery from '@/components/landing/Gallery';
 import Contact from '@/components/landing/Contact';
+import FaqSection from '@/components/landing/FaqSection';
 import Footer from '@/components/landing/Footer';
 import { WhatsAppFloatingButton } from '@/components/landing/WhatsAppChat';
 import usePageSeo from '@/hooks/usePageSeo';
-import { useEffect } from 'react'; // ✅ Ye add karein
+import useJsonLd from '@/hooks/useJsonLd';
 
-// ✅ Schema data yahan define karein
-const homeSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
+const homeBreadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
     {
-      "@type": "WebSite",
-      "@id": "https://sucatering.online/#website",
-      "url": "https://sucatering.online",
-      "name": "Su Food",
-      "inLanguage": "en-US"
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://sucatering.online',
     },
-    {
-      "@type": "Restaurant",
-      "@id": "https://sucatering.online/#restaurant",
-      "name": "Su Food",
-      "url": "https://sucatering.online",
-      "description": "Islamabad corporate catering for offices and call centers. BBQ, Biryani, Pulao, Tikka for bulk orders.",
-      "servesCuisine": ["Pakistani", "BBQ", "Continental"],
-      "priceRange": "$$",
-      "telephone": "+92-xxx-xxxxxxx",
-      "email": "info@sucatering.online",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Islamabad",
-        "addressRegion": "Islamabad Capital Territory",
-        "addressCountry": "PK"
-      },
-      "areaServed": "Islamabad",
-      "sameAs": [
-        "https://www.facebook.com/sufood",
-        "https://www.instagram.com/sufood"
-      ]
-    }
-  ]
+  ],
 };
 
 export default function Index() {
   usePageSeo(
-    'Su Food | Corporate Catering Service Islamabad | BBQ, Biryani, Tikka',
-    'Islamabad corporate catering for offices and call centers. SU Food serves BBQ, Biryani, Pulao, Tikka, and Daal Chawal for bulk orders from 50 to 1000+ people.',
+    "Safiullah's Food | Corporate Catering Service Islamabad | BBQ, Biryani, Tikka",
+    "Islamabad aur Rawalpindi mein offices aur call centers ke liye best catering service. Safiullah's Food — BBQ, Biryani, Tikka, Pulao, Daal Chawal. Bulk orders available. Abhi quote lein!",
   );
-
-  // ✅ Schema inject karne ka code
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.id = 'home-schema';
-    script.text = JSON.stringify(homeSchema);
-    document.head.appendChild(script);
-
-    return () => {
-      const existing = document.getElementById('home-schema');
-      if (existing) document.head.removeChild(existing);
-    };
-  }, []);
+  useJsonLd([{ id: 'schema-breadcrumb-home', data: homeBreadcrumbSchema }]);
 
   return (
     <div className="min-h-screen">
@@ -82,6 +47,7 @@ export default function Index() {
       <ServiceCoverage />
       <Testimonials />
       <Gallery />
+      <FaqSection />
       <Contact />
       <Footer />
       <WhatsAppFloatingButton />

@@ -131,7 +131,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Get Catering Price Quote - +923165757901',
+    ctaLabel: 'Get Catering Price Quote - +923189587264',
   },
   {
     slug: 'best-catering-services-islamabad',
@@ -243,7 +243,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Book Best Catering Service in Islamabad - +923165757901',
+    ctaLabel: 'Book Best Catering Service in Islamabad - +923189587264',
   },
   {
     slug: 'office-catering-islamabad',
@@ -307,7 +307,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Office Catering Quote Lein - +923165757901',
+    ctaLabel: 'Office Catering Quote Lein - +923189587264',
   },
   {
     slug: 'bbq-catering-corporate-events-islamabad',
@@ -374,7 +374,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'BBQ Event Quote - +923165757901',
+    ctaLabel: 'BBQ Event Quote - +923189587264',
   },
   {
     slug: 'call-center-food-supply-islamabad',
@@ -435,7 +435,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Call Center Meal Plan Quote - +923165757901',
+    ctaLabel: 'Call Center Meal Plan Quote - +923189587264',
   },
   {
     slug: 'keto-meal-delivery-islamabad',
@@ -487,7 +487,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Keto Meals Order - +923165757901',
+    ctaLabel: 'Keto Meals Order - +923189587264',
   },
   {
     slug: 'bulk-biryani-order-islamabad',
@@ -544,7 +544,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Bulk Order Quote Lein - +923165757901',
+    ctaLabel: 'Bulk Order Quote Lein - +923189587264',
   },
 ];
 

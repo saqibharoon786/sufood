@@ -44,7 +44,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: "Safiullah's Food se kaise contact karein?",
-      acceptedAnswer: { '@type': 'Answer', text: 'Phone ya WhatsApp: +923165757901. Email: sufood@gmail.com. Website: sucatering.online. Monday se Saturday 9am se 8pm available hain.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Phone ya WhatsApp: +923189587264. Email: sufood@gmail.com. Website: sucatering.online. Monday se Saturday 9am se 8pm available hain.' },
     },
     {
       '@type': 'Question',
@@ -116,7 +116,7 @@ const contactBreadcrumbSchema = {
 export default function ContactPage() {
   usePageSeo(
     "Contact Us | Get a Catering Quote | Safiullah's Food Islamabad",
-    "Safiullah's Food se rabta karein — office catering, event booking ya bulk order quote ke liye. Phone: +923165757901. Islamabad aur Rawalpindi mein delivery available. Abhi call karein!",
+    "Safiullah's Food se rabta karein — office catering, event booking ya bulk order quote ke liye. Phone: +923189587264. Islamabad aur Rawalpindi mein delivery available. Abhi call karein!",
   );
   useJsonLd([
     { id: 'schema-faq-contact', data: faqSchema },

@@ -1,5 +1,3 @@
-import { Instagram, Facebook } from 'lucide-react';
-
 function TikTokIcon({ className = '' }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
@@ -11,8 +9,6 @@ function TikTokIcon({ className = '' }: { className?: string }) {
 export default function Footer() {
   const scrollTo = (id: string) => document.querySelector(id)?.scrollIntoView({ behavior: 'smooth' });
   const socialLinks = [
-    { href: 'https://www.facebook.com/profile.php?id=61565024385477', label: 'Facebook', Icon: Facebook },
-    { href: 'https://www.instagram.com/safiullahsfood', label: 'Instagram', Icon: Instagram },
     { href: 'https://www.tiktok.com/@sufoods6?_r=1&_t=ZS-95AWEFiVY4V', label: 'TikTok', Icon: TikTokIcon },
   ];
 

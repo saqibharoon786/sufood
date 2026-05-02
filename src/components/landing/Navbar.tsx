@@ -11,28 +11,10 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 
-function FacebookIcon({ className = '' }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
-      <path d="M13.5 8H16V5h-2.5C10.46 5 9 6.79 9 9.36V11H7v3h2v5h3v-5h2.52l.48-3H12V9.61C12 8.74 12.26 8 13.5 8Z" />
-    </svg>
-  );
-}
-
-function InstagramIcon({ className = '' }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden>
-      <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" strokeWidth="2" />
-      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="2" />
-      <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" />
-    </svg>
-  );
-}
-
 function TikTokIcon({ className = '' }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
-      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.1v13.22a2.92 2.92 0 1 1-2-2.78V9.28a6.02 6.02 0 1 0 5.11 5.94V8.47a7.9 7.9 0 0 0 4.62 1.49V6.87c-.3 0-.59-.06-.86-.18Z" />
+      <path d="M12.53.02C13.84.02 15.15.03 16.46 0c.08 1 .17 2.01.27 3.02 1.04.02 2.08.04 3.12.06v3.08c-1.04.02-2.08.04-3.12.06v8.16c0 1.04-.21 2.08-.63 3.02-.57 1.25-1.57 2.27-2.81 2.86-1.04.43-2.19.57-3.31.43-.8-.09-1.58-.36-2.27-.8-.95-.61-1.7-1.5-2.16-2.54-.51-1.15-.71-2.43-.63-3.7.07-1.14.42-2.24 1.01-3.2.79-1.27 2.01-2.23 3.43-2.7.74-.25 1.54-.39 2.33-.38.01 1.06.03 2.12.04 3.19-.61-.04-1.25-.02-1.84.21-.75.29-1.37.85-1.73 1.56-.27.54-.4 1.14-.4 1.74 0 .6.13 1.2.4 1.74.36.71.98 1.27 1.73 1.56.59.23 1.23.25 1.84.21.01-1.06.03-2.12.04-3.19-1.04-.02-2.08-.04-3.12-.06V3.08c1.04-.02 2.08-.04 3.12-.06-.1-1.01-.19-2.02-.27-3.02z" />
     </svg>
   );
 }
@@ -42,7 +24,6 @@ const navLinks = [
   { label: 'About', to: '/about' },
   { label: 'Menu', to: '/menu' },
   { label: 'Deals', to: '/deals' },
-  { label: 'Services', to: '/services' },
   { label: 'Coverage', to: '/coverage' },
   { label: 'Gallery', to: '/gallery' },
   { label: 'Blog', to: '/blog' },
@@ -52,20 +33,6 @@ const navLinks = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const socials = [
-    {
-      href: 'https://www.facebook.com/profile.php?id=61565024385477',
-      label: 'Facebook',
-      Icon: FacebookIcon,
-      className: 'bg-[#1877F2] text-white shadow-[0_0_0_2px_rgba(24,119,242,0.25)]',
-      iconClass: 'h-5 w-5',
-    },
-    {
-      href: '#',
-      label: 'Instagram',
-      Icon: InstagramIcon,
-      className: 'bg-gradient-to-br from-[#F9CE34] via-[#EE2A7B] to-[#6228D7] text-white shadow-[0_0_0_2px_rgba(238,42,123,0.25)]',
-      iconClass: 'h-5 w-5',
-    },
     {
       href: 'https://www.tiktok.com/@sufoods6?_r=1&_t=ZS-95AWEFiVY4V',
       label: 'TikTok',

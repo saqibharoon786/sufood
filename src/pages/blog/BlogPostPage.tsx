@@ -45,12 +45,14 @@ export default function BlogPostPage() {
             {post.sections.map(section => (
               <section key={section.heading} className="space-y-3">
                 <h2 className="font-serif text-2xl font-semibold text-foreground">{section.heading}</h2>
-                {section.paragraphs?.map(text => (
-                  <p key={text} className="text-muted-foreground leading-relaxed">{text}</p>
+                {section.paragraphs?.map((text, index) => (
+                  <p key={index} className="text-muted-foreground leading-relaxed" dangerouslySetInnerHTML={{ __html: text }}></p>
                 ))}
                 {section.bullets && (
                   <ul className="space-y-2 text-muted-foreground">
-                    {section.bullets.map(item => <li key={item}>- {item}</li>)}
+                    {section.bullets.map((item, index) => (
+                      <li key={index} dangerouslySetInnerHTML={{ __html: `- ${item}` }}></li>
+                    ))}
                   </ul>
                 )}
                 {section.steps && (

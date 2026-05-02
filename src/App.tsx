@@ -72,6 +72,8 @@ const App = () => (
             <Route path="/blog" element={<BlogListPage />} />
             <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/contact-us" element={<ContactPage />} />
+            <Route path="/wedding-catering-services" element={<WeddingCateringServicesPage />} />
+            <Route path="/corporate-catering-services" element={<CorporateCateringServicesPage />} />
             <Route path="/pos/login" element={<Login />} />
             <Route path="/pos" element={<POSLayout />}>
               <Route index element={<PageGuard page="dashboard"><POSDashboard /></PageGuard>} />

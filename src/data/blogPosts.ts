@@ -19,6 +19,233 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'catering-price-pakistan',
+    title: 'Catering Price in Pakistan | Complete Guide to Costs, Packages & Budget Planning (2026)',
+    metaTitle: 'Catering Price in Pakistan 2026 | Complete Cost Guide | SU Catering',
+    metaDescription: 'Complete guide to catering prices in Pakistan. Learn about wedding, corporate, and event catering costs, packages, and budget planning tips.',
+    datePublished: '2026-05-02',
+    heroImage: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&q=80',
+    excerpt: 'Complete guide to catering prices in Pakistan. Understand costs, packages, and budget planning for weddings, corporate events, and private gatherings.',
+    sections: [
+      {
+        heading: 'Catering Price in Pakistan | Complete Guide to Costs, Packages & Budget Planning (2026)',
+        paragraphs: [
+          'When planning any event, one of the most important questions people ask is: "Catering ka price Pakistan me kitna hota hai?"',
+          'Whether you are organizing a wedding, corporate event, birthday party, or small gathering, understanding catering prices in Pakistan helps you plan your budget effectively and avoid unnecessary expenses.',
+          'In this complete guide, we will break down catering costs in Pakistan, pricing factors, event-wise estimates, and smart tips to get the best value for your money.',
+        ],
+      },
+      {
+        heading: 'Understanding Catering Prices in Pakistan',
+        paragraphs: [
+          'Catering prices in Pakistan vary depending on multiple factors such as location, menu selection, event type, and service level.',
+          'These prices can vary significantly depending on customization and event requirements.',
+        ],
+        bullets: [
+          'Basic catering: PKR 500 – 900 per head',
+          'Mid-range catering: PKR 900 – 1800 per head',
+          'Premium catering: PKR 1800 – 3500+ per head',
+        ],
+      },
+      {
+        heading: 'Factors That Affect Catering Prices in Pakistan',
+        paragraphs: [
+          'Understanding pricing factors will help you make better decisions.',
+        ],
+        bullets: [
+          '1. Type of Event: Different events have different catering requirements - Weddings → highest cost, Corporate events → moderate cost, Home gatherings → lower cost. 👉 For detailed wedding services, explore our <a href="/wedding-catering-services" style="color: #f97316; text-decoration: underline; font-weight: 600;">wedding catering services</a>',
+          '2. Menu Selection: The menu plays the biggest role in determining catering cost - Simple menu → lower price, BBQ + multiple dishes → higher price, Premium dishes → highest price. 👉 You can explore available dishes through our <a href="/menu" style="color: #f97316; text-decoration: underline; font-weight: 600;">complete catering menu</a>',
+          '3. Number of Guests: The total cost increases with the number of guests, but per-head cost may decrease for larger events due to bulk pricing.',
+          '4. Location: Catering prices in major cities like Islamabad, Lahore, and Karachi are usually higher compared to smaller cities. 👉 For city-specific services, check our <a href="/catering-services-islamabad" style="color: #f97316; text-decoration: underline; font-weight: 600;">catering services in Islamabad</a>',
+          '5. Service Type: Food delivery only → cheaper, Full service (staff, setup) → more expensive. 👉 For professional service options, explore our <a href="/corporate-catering-services" style="color: #f97316; text-decoration: underline; font-weight: 600;">corporate catering services</a>',
+        ],
+      },
+      {
+        heading: 'Catering Price for Different Events in Pakistan',
+        bullets: [
+          '💍 Wedding Catering Price in Pakistan: Weddings are the most expensive events when it comes to catering. Basic wedding: PKR 1000 – 1500 per head, Mid-range: PKR 1500 – 2500 per head, Premium: PKR 2500 – 4000+ per head. This includes multiple dishes, desserts, service staff, setup.',
+          '🏢 Corporate Catering Price: Corporate catering is usually more structured and cost-efficient. Per head cost: PKR 800 – 2000, Monthly office catering → discounted rates.',
+          '🎉 Birthday & Small Event Catering Price: For smaller events: PKR 500 – 1200 per head, Simple menus and limited dishes.',
+          '🔥 BBQ Catering Price in Pakistan: BBQ catering is popular for outdoor events. PKR 900 – 2000 per head, Live BBQ setup may increase cost.',
+        ],
+      },
+      {
+        heading: 'Budget-Friendly Catering Tips (SAVE MONEY 💰)',
+        paragraphs: [
+          'If you want quality catering within budget, follow these tips:',
+        ],
+        bullets: [
+          '🔹 Choose a Smart Menu: Avoid unnecessary dishes. Focus on 2–3 main dishes, 1 dessert, drinks.',
+          '🔹 Book Early: Last-minute bookings can increase prices.',
+          '🔹 Go for Local Caterers: Local caterers reduce transportation costs and offer better pricing.',
+          '🔹 Optimize Guest Count: Accurate guest count prevents over-ordering.',
+        ],
+      },
+      {
+        heading: 'High-Impact SEO Section (Keyword Rich 🔥)',
+        paragraphs: [
+          'Catering price in Pakistan is one of the most searched topics by people planning weddings, corporate events, and private gatherings. With increasing inflation and rising event standards, people want affordable catering services without compromising on quality.',
+          'Whether you are searching for cheap catering in Pakistan, wedding catering cost, or per head catering price in Islamabad, understanding pricing structures helps you make better decisions.',
+          'At SU Catering, we provide flexible and transparent pricing options that suit different budgets and event types. Our goal is to deliver high-quality food and professional service at competitive rates.',
+        ],
+      },
+      {
+        heading: 'Catering Packages – What You Should Expect',
+        paragraphs: [
+          'Most professional caterers offer packages that include food preparation, delivery, setup, service staff.',
+          'Premium packages may also include decoration, live cooking stations, custom setups.',
+        ],
+      },
+      {
+        heading: 'Common Mistakes When Choosing Catering Services',
+        bullets: [
+          'Choosing only based on price',
+          'Ignoring food quality',
+          'Not checking menu details',
+          'Booking too late',
+        ],
+      },
+      {
+        heading: 'How to Choose the Right Catering Service',
+        bullets: [
+          'Compare multiple caterers',
+          'Check reviews',
+          'Ask for menu details',
+          'Confirm pricing transparency',
+        ],
+      },
+      {
+        heading: 'FAQs About Catering Prices in Pakistan',
+        bullets: [
+          '❓ What is the cheapest catering price in Pakistan? Basic catering starts from around PKR 500 per head.',
+          '❓ What is the average wedding catering cost? It ranges between PKR 1500 to 3000 per head.',
+          '❓ Do catering services include staff? Yes, most packages include service staff.',
+          '❓ Can I customize my catering package? Yes, most caterers offer customization.',
+        ],
+      },
+      {
+        heading: 'Final Thoughts',
+        paragraphs: [
+          'Understanding catering prices in Pakistan is essential for planning a successful event. Prices vary based on menu, event type, and service level, but with the right strategy, you can find a catering solution that fits your budget.',
+          'The key is to focus on value, not just price. A reliable catering service ensures quality food, professional service, and a smooth event experience.',
+        ],
+      },
+    ],
+    ctaLabel: 'Get Catering Price Quote - +923165757901',
+  },
+  {
+    slug: 'best-catering-services-islamabad',
+    title: 'Best Catering Services in Islamabad | Complete Guide to Choosing the Right Caterer',
+    metaTitle: 'Best Catering Services in Islamabad 2026 | Complete Guide | SU Catering',
+    metaDescription: 'Find the best catering services in Islamabad. Complete guide to choosing professional caterers for weddings, corporate events, and private gatherings.',
+    datePublished: '2026-05-02',
+    heroImage: 'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=1400&q=80',
+    excerpt: 'Complete guide to finding the best catering services in Islamabad. Learn how to choose professional caterers for weddings, corporate events, and private gatherings.',
+    sections: [
+      {
+        heading: 'Best Catering Services in Islamabad | Complete Guide to Choosing the Right Caterer',
+        paragraphs: [
+          'Finding the best catering services in Islamabad is one of the most important decisions when planning any event. Whether it\'s a wedding, corporate meeting, birthday party, or private gathering, the quality of catering can define the entire experience.',
+          'In a city like Islamabad, where events are becoming more frequent and expectations are rising, choosing the right caterer is not just about food — it\'s about professionalism, presentation, reliability, and overall service quality.',
+          'This guide will help you understand how to choose the best catering service in Islamabad, what factors to consider, and how to ensure your event is successful.',
+        ],
+      },
+      {
+        heading: 'Why Catering Services Matter for Every Event',
+        paragraphs: [
+          'Catering is the backbone of any event. No matter how well you plan the décor or venue, guests will always remember the food and service.',
+          'A professional catering service ensures high-quality and hygienic food, proper food presentation, timely service, and stress-free event management.',
+          'In Islamabad, where competition is high, choosing the right catering service can make your event stand out.',
+        ],
+      },
+      {
+        heading: 'Types of Catering Services in Islamabad',
+        paragraphs: [
+          'Before selecting a caterer, it\'s important to understand the different types of catering services available.',
+        ],
+        bullets: [
+          'Wedding Catering Services: Wedding catering requires large-scale planning, multiple dishes, and flawless execution. From Barat to Walima, professional caterers ensure everything runs smoothly. 👉 Explore our <a href="/wedding-catering-services" style="color: #f97316; text-decoration: underline; font-weight: 600;">wedding catering services</a> for complete solutions.',
+          'Corporate Catering Services: Businesses in Islamabad often require catering for meetings, conferences, and office events. Corporate catering focuses on punctuality and professional presentation. 👉 Check our <a href="/corporate-catering-services" style="color: #f97316; text-decoration: underline; font-weight: 600;">corporate catering services</a> for business solutions.',
+          'Home & Private Event Catering: For smaller gatherings like birthdays or dinners, home catering services provide convenience and flexibility.',
+          'BBQ & Outdoor Catering: Outdoor events are very popular in Islamabad, especially during pleasant weather. BBQ catering adds a live cooking experience to events.',
+        ],
+      },
+      {
+        heading: 'Key Factors to Consider When Choosing Catering Services in Islamabad',
+        paragraphs: [
+          'Selecting the right catering service requires careful evaluation.',
+        ],
+        bullets: [
+          '1. Food Quality & Taste: The most important factor is the quality of food. Always choose a caterer that uses fresh ingredients and maintains consistency in taste.',
+          '2. Menu Variety: A good catering service should offer a wide range of menu options, including Traditional Pakistani dishes, BBQ items, Continental options, Desserts and beverages. 👉 You can check our complete <a href="/menu" style="color: #f97316; text-decoration: underline; font-weight: 600;">catering menu</a> for variety.',
+          '3. Experience & Reputation: Experienced caterers understand how to handle different types of events efficiently. Always choose a catering service with proven experience.',
+          '4. Pricing & Packages: Budget plays an important role. Look for caterers that offer flexible and transparent pricing without hidden charges. 👉 For detailed pricing information, check our <a href="/blog/catering-price-pakistan" style="color: #f97316; text-decoration: underline; font-weight: 600;">catering price guide</a>.',
+          '5. Service & Professionalism: Professional staff, proper setup, and timely service are essential for a successful event.',
+        ],
+      },
+      {
+        heading: 'Why Islamabad Needs Professional Catering Services',
+        paragraphs: [
+          'Islamabad is a modern city where expectations are high. Events are not just about gathering people — they are about creating experiences.',
+          'Professional catering services in Islamabad provide organized event execution, high-quality food standards, better guest experience, and time and cost efficiency.',
+        ],
+      },
+      {
+        heading: 'High-Impact SEO Section (Keyword Rich 🔥)',
+        paragraphs: [
+          'The demand for best catering services in Islamabad has increased significantly due to the growing number of weddings, corporate events, and social gatherings. People are constantly searching for reliable caterers who can provide high-quality food and professional service.',
+          'Whether you are looking for affordable catering services in Islamabad, wedding caterers, or corporate catering solutions, choosing the right service provider is essential.',
+          'At SU Catering, we provide complete catering solutions designed to meet the needs of modern clients. Our services focus on quality, reliability, and customer satisfaction, ensuring that every event is handled professionally.',
+        ],
+      },
+      {
+        heading: 'Benefits of Hiring Professional Caterers',
+        bullets: [
+          'Saves time and effort',
+          'Ensures food quality',
+          'Provides professional service',
+          'Enhances event experience',
+        ],
+      },
+      {
+        heading: 'Common Mistakes to Avoid When Hiring a Caterer',
+        bullets: [
+          'Choosing based only on price',
+          'Ignoring reviews and reputation',
+          'Not checking menu options',
+          'Booking too late',
+        ],
+      },
+      {
+        heading: 'Tips to Get the Best Catering Experience',
+        bullets: [
+          'Book your caterer in advance',
+          'Discuss your menu clearly',
+          'Confirm guest count',
+          'Communicate special requirements',
+        ],
+      },
+      {
+        heading: 'FAQs About Catering Services in Islamabad',
+        bullets: [
+          '❓ What is the average cost of catering in Islamabad? It depends on the menu, number of guests, and event type.',
+          '❓ Do catering services provide staff? Yes, most professional caterers provide complete service.',
+          '❓ Can I customize my menu? Yes, customization is available.',
+          '❓ How early should I book catering services? It is recommended to book at least 1–2 weeks in advance.',
+        ],
+      },
+      {
+        heading: 'Final Thoughts',
+        paragraphs: [
+          'Choosing the best catering services in Islamabad is essential for making your event successful. From food quality to service and presentation, every detail matters.',
+          'A professional catering service not only provides delicious food but also ensures a smooth and stress-free experience.',
+          'If you are planning an event, take the time to choose the right caterer — it will make all the difference.',
+        ],
+      },
+    ],
+    ctaLabel: 'Book Best Catering Service in Islamabad - +923165757901',
+  },
+  {
     slug: 'office-catering-islamabad',
     title: 'Islamabad Mein Office Catering Service - Safiullah\'s Food',
     metaTitle: 'Best Office Catering Service Islamabad 2025 | Safiullah\'s Food',
@@ -80,7 +307,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Free Quote Lein - 0331-2311138',
+    ctaLabel: 'Office Catering Quote Lein - +923165757901',
   },
   {
     slug: 'bbq-catering-corporate-events-islamabad',
@@ -147,7 +374,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'BBQ Event Book Karein - 0331-2311138',
+    ctaLabel: 'BBQ Event Quote - +923165757901',
   },
   {
     slug: 'call-center-food-supply-islamabad',
@@ -208,7 +435,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Call Center Package Discuss Karein - 0331-2311138',
+    ctaLabel: 'Call Center Meal Plan Quote - +923165757901',
   },
   {
     slug: 'keto-meal-delivery-islamabad',
@@ -260,7 +487,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Keto Plan Order Karein - 0331-2311138',
+    ctaLabel: 'Keto Meals Order - +923165757901',
   },
   {
     slug: 'bulk-biryani-order-islamabad',
@@ -317,7 +544,7 @@ export const blogPosts: BlogPost[] = [
         ],
       },
     ],
-    ctaLabel: 'Bulk Order Quote Lein - 0331-2311138',
+    ctaLabel: 'Bulk Order Quote Lein - +923165757901',
   },
 ];
 

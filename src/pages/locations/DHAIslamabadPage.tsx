@@ -100,8 +100,8 @@ export default function DHAIslamabadPage() {
                 <p className="text-gray-600 mb-4">
                   Weddings in DHA Islamabad are known for their elegance and scale. Our wedding catering services are designed to match that standard with premium menus, professional staff, and flawless execution.
                 </p>
-                <Link to="/wedding-catering-islamabad" className="inline-flex items-center text-green-600 hover:text-green-700 font-medium">
-                  👉 Also explore our wedding catering services in Islamabad for extended options.
+                <Link to="/wedding-catering-services" className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium">
+                  👉 For complete wedding solutions, explore our wedding catering services in Islamabad.
                 </Link>
               </div>
               
@@ -113,8 +113,8 @@ export default function DHAIslamabadPage() {
                 <p className="text-gray-600 mb-4">
                   We provide professional corporate catering services for offices, meetings, and corporate events in DHA Islamabad.
                 </p>
-                <Link to="/corporate-catering-islamabad" className="inline-flex items-center text-green-600 hover:text-green-700 font-medium">
-                  👉 Check our corporate catering services for business solutions.
+                <Link to="/corporate-catering-services" className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium">
+                  👉 For business-focused solutions, explore our corporate catering services in Islamabad.
                 </Link>
               </div>
               

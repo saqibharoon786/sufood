@@ -107,80 +107,104 @@ export default function Navbar() {
                   Services
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid gap-6 p-6 w-[400px]">
-                    <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-3">Services</h4>
-                      <div className="space-y-2">
+                  <div className="flex gap-0 p-0 w-[600px] bg-gradient-to-br from-orange-50 via-red-50 to-yellow-50 rounded-lg shadow-xl border border-orange-100">
+                    {/* Services Column */}
+                    <div className="flex-1 p-6 border-r border-orange-200">
+                      <h4 className="text-sm font-bold text-gray-800 mb-4 flex items-center">
+                        <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                        Services
+                      </h4>
+                      <div className="space-y-1">
                         <NavigationMenuLink asChild>
-                          <Link to="/catering-services-islamabad" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Catering Services Islamabad</div>
+                          <Link to="/catering-services-islamabad" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-orange-600 focus:bg-white/70 focus:text-orange-600 border border-transparent hover:border-orange-200">
+                            <div className="text-sm font-semibold leading-none">Catering Services Islamabad</div>
+                            <div className="text-xs text-gray-500 mt-1">Complete catering solutions</div>
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
-                          <Link to="/catering-services-rawalpindi" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Catering Services Rawalpindi</div>
+                          <Link to="/catering-services-rawalpindi" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-orange-600 focus:bg-white/70 focus:text-orange-600 border border-transparent hover:border-orange-200">
+                            <div className="text-sm font-semibold leading-none">Catering Services Rawalpindi</div>
+                            <div className="text-xs text-gray-500 mt-1">Professional catering services</div>
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
-                          <Link to="/wedding-catering-services-islamabad" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Wedding Catering Services</div>
+                          <Link to="/wedding-catering-services-islamabad" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-orange-600 focus:bg-white/70 focus:text-orange-600 border border-transparent hover:border-orange-200">
+                            <div className="text-sm font-semibold leading-none">Wedding Catering Services</div>
+                            <div className="text-xs text-gray-500 mt-1">Special wedding solutions</div>
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
-                          <Link to="/corporate-catering-services-islamabad" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Corporate Catering Services</div>
-                          </Link>
-                        </NavigationMenuLink>
-                      </div>
-                    </div>
-                    
-                    <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-3">Islamabad Locations</h4>
-                      <div className="space-y-2">
-                        <NavigationMenuLink asChild>
-                          <Link to="/catering-services-dha-islamabad" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">DHA Islamabad</div>
-                          </Link>
-                        </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
-                          <Link to="/catering-services-bahria-town" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Bahria Town</div>
-                          </Link>
-                        </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
-                          <Link to="/catering-services-g11-islamabad" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">G-11 Islamabad</div>
-                          </Link>
-                        </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
-                          <Link to="/catering-services-f10-islamabad" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">F-10 Islamabad</div>
-                          </Link>
-                        </NavigationMenuLink>
-                        <NavigationMenuLink asChild>
-                          <Link to="/catering-services-blue-area" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Blue Area</div>
+                          <Link to="/corporate-catering-services-islamabad" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-orange-600 focus:bg-white/70 focus:text-orange-600 border border-transparent hover:border-orange-200">
+                            <div className="text-sm font-semibold leading-none">Corporate Catering Services</div>
+                            <div className="text-xs text-gray-500 mt-1">Business event catering</div>
                           </Link>
                         </NavigationMenuLink>
                       </div>
                     </div>
                     
-                    <div>
-                      <h4 className="text-sm font-semibold text-gray-900 mb-3">Rawalpindi Locations</h4>
-                      <div className="space-y-2">
+                    {/* Islamabad Locations Column */}
+                    <div className="flex-1 p-6 border-r border-orange-200">
+                      <h4 className="text-sm font-bold text-gray-800 mb-4 flex items-center">
+                        <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                        Islamabad Locations
+                      </h4>
+                      <div className="space-y-1">
                         <NavigationMenuLink asChild>
-                          <Link to="/catering-services-saddar-rawalpindi" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Saddar Rawalpindi</div>
+                          <Link to="/catering-services-dha-islamabad" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-red-600 focus:bg-white/70 focus:text-red-600 border border-transparent hover:border-red-200">
+                            <div className="text-sm font-semibold leading-none">DHA Islamabad</div>
+                            <div className="text-xs text-gray-500 mt-1">Premium catering</div>
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
-                          <Link to="/catering-services-bahria-rawalpindi" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Bahria Rawalpindi</div>
+                          <Link to="/catering-services-bahria-town" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-red-600 focus:bg-white/70 focus:text-red-600 border border-transparent hover:border-red-200">
+                            <div className="text-sm font-semibold leading-none">Bahria Town</div>
+                            <div className="text-xs text-gray-500 mt-1">Reliable services</div>
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
-                          <Link to="/catering-services-chaklala" className="block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none">Chaklala</div>
+                          <Link to="/catering-services-g11-islamabad" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-red-600 focus:bg-white/70 focus:text-red-600 border border-transparent hover:border-red-200">
+                            <div className="text-sm font-semibold leading-none">G-11 Islamabad</div>
+                            <div className="text-xs text-gray-500 mt-1">Affordable options</div>
+                          </Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link to="/catering-services-f10-islamabad" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-red-600 focus:bg-white/70 focus:text-red-600 border border-transparent hover:border-red-200">
+                            <div className="text-sm font-semibold leading-none">F-10 Islamabad</div>
+                            <div className="text-xs text-gray-500 mt-1">Event focused</div>
+                          </Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link to="/catering-services-blue-area" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-red-600 focus:bg-white/70 focus:text-red-600 border border-transparent hover:border-red-200">
+                            <div className="text-sm font-semibold leading-none">Blue Area</div>
+                            <div className="text-xs text-gray-500 mt-1">Corporate experts</div>
+                          </Link>
+                        </NavigationMenuLink>
+                      </div>
+                    </div>
+                    
+                    {/* Rawalpindi Locations Column */}
+                    <div className="flex-1 p-6">
+                      <h4 className="text-sm font-bold text-gray-800 mb-4 flex items-center">
+                        <span className="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span>
+                        Rawalpindi Locations
+                      </h4>
+                      <div className="space-y-1">
+                        <NavigationMenuLink asChild>
+                          <Link to="/catering-services-saddar-rawalpindi" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-yellow-600 focus:bg-white/70 focus:text-yellow-600 border border-transparent hover:border-yellow-200">
+                            <div className="text-sm font-semibold leading-none">Saddar Rawalpindi</div>
+                            <div className="text-xs text-gray-500 mt-1">Professional catering</div>
+                          </Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link to="/catering-services-bahria-rawalpindi" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-yellow-600 focus:bg-white/70 focus:text-yellow-600 border border-transparent hover:border-yellow-200">
+                            <div className="text-sm font-semibold leading-none">Bahria Rawalpindi</div>
+                            <div className="text-xs text-gray-500 mt-1">Quality services</div>
+                          </Link>
+                        </NavigationMenuLink>
+                        <NavigationMenuLink asChild>
+                          <Link to="/catering-services-chaklala" className="block select-none space-y-1 rounded-lg p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-white/70 hover:shadow-md hover:text-yellow-600 focus:bg-white/70 focus:text-yellow-600 border border-transparent hover:border-yellow-200">
+                            <div className="text-sm font-semibold leading-none">Chaklala</div>
+                            <div className="text-xs text-gray-500 mt-1">Reliable options</div>
                           </Link>
                         </NavigationMenuLink>
                       </div>
